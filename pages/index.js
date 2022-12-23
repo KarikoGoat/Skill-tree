@@ -6,7 +6,6 @@ const index = () => {
       <div className="text-1xl">index</div>
       <Link href="/create">Make a skill tree</Link>
     </>
-   
   )
 }
 

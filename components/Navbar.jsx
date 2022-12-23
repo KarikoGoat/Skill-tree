@@ -3,9 +3,11 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-      <div className='fixed top-0 left-0 right-0 p-5 bg-gray-500'>
-
-      </div>
+      <nav>
+        <div className='fixed left-0 right-0 h-10 p-2 bg-gray-500 z-20'>
+          <h1>navbar</h1>
+        </div>
+      </nav>
     </>
   )
 }

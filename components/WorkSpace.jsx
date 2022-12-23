@@ -3,16 +3,16 @@ import AddItemDropdown from './AddItemDropdown'
 import Item from './Item';
 
 
-const WorkSpace = () => {
+const WorkSpace = (props) => {
 
   const workSpaceRef = useRef();  
   const [items, setItems] = useState([]);
 
   return (
-    <div className="h-screen w-screen"  ref={workSpaceRef}>
+    <div className="z-0 w-5/6 overflow-auto"  ref={workSpaceRef}>
       {items.map((item) => {
         return (
-          <Item item={item} /> 
+          <Item item={item} setCurrentItem={props.setCurrentItem}/> 
         )
       })}
       <AddItemDropdown items={items} setItems={setItems} parentRef={workSpaceRef}/>
